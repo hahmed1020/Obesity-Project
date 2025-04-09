@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Visualizations</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=EB+Garamond&family=Lora:wght@500&family=Merriweather:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="nav-bar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">Obesity Insights</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="visualization.html" class="active">Visualizations</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Data Visualizations</h1>
+
+    <section class="viz-section" id="fig1">
+      <h2>Figure 1: Altair Boxplot – Weight by Obesity Level</h2>
+      <div class="viz-box">
+        <iframe src="Blue Obesity vs Weight Boxplot.html"></iframe>
+      </div>
+      <p><strong>Takeaway:</strong> Figure 1 is a boxplot displaying the distribution of weight, in kilograms, across various obesity levels. These levels are insufficient weight, normal weight, overweight (Level I and II), and obesity (Type I, Type II, and Type III). As obesity levels increase, the weights of individuals tend to increase as well. In general, the distributions for each obesity category appear symmetrical. However, the distribution of Obesity Type III individuals is skewed right, meaning they tend to have higher weights. </p>
+      <p><strong>Interaction:</strong> Since the figure was generated with Altair, it includes an interactive tooltip feature. This allows users to hover over each box plot and view precise statistical values for each group, including the minimum, first quartile (Q1), median, third quartile (Q3), and maximum weights. As a result, the user can obtain exact data points rather than relying on visual estimates. </p>
+    </section>
+
+    <section class="viz-section" id="fig3">
+      <h2>Figure 2: Scatter Plot – Height vs Weight</h2>
+      <div class="viz-box">
+        <iframe src="Blue Weight vs Height Scatterplot.html"></iframe>
+      </div>
+      <p><strong>Takeaway:</strong> Figure 2 is a scatterplot displaying the relationship between weight, in kilograms, and height, in meters, of individuals across all obesity categories. In general, there seems to be a moderately strong, positive relationship between the two features. However, this trend is more evident within each category. For example, within the insufficient weight category, the relationship appears to be stronger. In contrast, within the general obesity category, this relationship appears to be weaker and more variant, most likely due to the combination of subcategories.  </p>
+      <p><strong>Interaction:</strong> First off, the user can zoom in and out and drag the figure across the screen as needed. Similar to Figure 1, there is an interactive tooltip feature where the user can hover over points and view information, such as age and gender, in addition to weight and height. This allows the user to understand the data in greater depth by examining individual-level characteristics. Furthermore, the user has the option to highlight specific categories via a radio button, which allows them to focus on certain data.  </p>
+    </section>
+
+    <section class="viz-section" id="fig5">
+      <h2>Figure 3: Treemap - Gender vs. Obesity Levels</h2>
+      <div class="viz-box">
+        <iframe src="treemap.html"></iframe>
+      </div>
+      <p><strong>Takeaway:</strong> Figure 3 is a treemap showing the gender-based breakdown of obesity levels. Most females tend to be Obesity Type III, while most males tend to be Obesity Type II. In contrast, it is uncommon for females to be Obesity Type II and males to be Obesity Type III. Nonetheless, there is a similar number of females and males being Normal Weight and Overweight Level I. Additionally, more females tend to have insufficient weight, and more males tend to be Overweight Level II.</p>
+      <p><strong>Interaction:</strong> This figure has an interactive tooltip feature where the user can hover over a section and view the gender, obesity category, and number of records. When hovering, the user can see the gender, obesity category, and the number of records for that specific section. This hover feature makes it easier to compare across categories. Furthermore, upon clicking a box, the rest of the figure turns grey, improving the ability to focus on certain data.  </p>
+    </section>
+
+    <section class="viz-section" id="fig4">
+      <h2>Figure 4: Exploring the Influence of Age-Weight Relationship on Meal Frequency and Obesity Levels</h2>
+      <div class="viz-box">
+        <iframe src="blue combined plots.html"></iframe>
+      </div>
+      <p><strong>Takeaway:</strong> Figure 4 consists of two panels: a scatterplot displaying weight (kg) versus age (years) and a bar plot displaying the number of meals individuals consume across various obesity categories. As a portion of the scatterplot is selected, the bar plot updates to reflect the selected data. There is no strong linear trend overall; however, the data appears visually “sectioned off” by the obesity category. For example, individuals with insufficient weight tend to have consistently lower weights across all ages. In contrast, the weights of individuals in the normal and overweight categories overlap significantly, showing variation across ages. Those categorized as obese consistently weigh more than individuals in the other categories. As for the bar plot, most people, regardless of their obesity category, tend to have three meals a day. </p>
+      <p><strong>Interaction:</strong> As mentioned previously, as the user selects a portion of the scatterplot, the bar plot updates to reflect the selected data. This allows the user to see the meal consumption distribution of certain data, which, in turn, allows them to understand how the number of meals eaten a day affects different individuals belonging to various obesity categories.  </p>
+    </section>
+
+    <section class="viz-section" id="fig2">
+      <h2>Figure 5: D3 Chart – Food Between Meals vs Obesity</h2>
+      <div class="viz-box">
+        <iframe src="d3figure.html"></iframe>
+      </div>
+      <p><strong>Takeaway:</strong> Figure 5 displays a stacked bar chart showing the relationship between snacking frequency (CAEC: consumption of food between meals) and obesity levels. The chart segments individuals by obesity category within each snacking behavior: No, Sometimes, Frequently, and Always. The visualization reveals that individuals who report snacking “sometimes” make up the largest portion of the dataset and are predominantly classified under higher obesity levels, such as Obesity Type I, II, and III. In contrast, those who do not snack or snack frequently/always are fewer in number and more evenly distributed across normal or insufficient weight categories. This pattern suggests that occasional snacking may be associated with higher obesity risk, possibly due to inconsistent eating habits or compensatory overeating.</p>
+      <p><strong>Interaction:</strong> The D3 visualization includes interactive hover tooltips that display the exact number of individuals for each obesity level within each meal-snacking frequency. This interactivity allows users to directly compare obesity distribution patterns across behavior groups without estimating from bar height alone. Users can engage with the chart by hovering over different sections to gain deeper insight into which eating habits are more common in specific obesity categories.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Hana Ahmed, Emma Mathew, & Vrinda Rana</p>
+  </footer>
+</body>
+</html>
