@@ -38,7 +38,6 @@ d3.csv("Obesity prediction.csv").then(data => {
     .nice()
     .range([height, 0]);
 
-  //  Colorblind-friendly palette (Color Universal Design)
   const color = d3.scaleOrdinal()
     .domain(keys)
     .range([
