@@ -42,13 +42,13 @@ d3.csv("Obesity prediction.csv").then(data => {
   const color = d3.scaleOrdinal()
     .domain(keys)
     .range([
-      "#c6dbef", // orange
-      "#9ecae1", // sky blue
-      "#6baed6", // bluish green
-      "#4292c6", // yellow
-      "#2171b5", // blue
-      "#08519c", // vermillion
-      "#08306b"  // reddish purple
+      "#c6dbef", 
+      "#9ecae1", 
+      "#6baed6", 
+      "#4292c6", 
+      "#2171b5", 
+      "#08519c", 
+      "#08306b"  
     ]);
 
   const stacked = d3.stack()
