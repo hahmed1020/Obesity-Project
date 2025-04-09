@@ -1,0 +1,33 @@
+﻿Figure 1:
+Figure 1 is a boxplot displaying the distribution of weight, in kilograms, across various obesity levels. These levels are insufficient weight, normal weight, overweight (Level I and II), and obesity (Type I, Type II, and Type III). As obesity levels increase, the weights of individuals tend to increase as well. In general, the distributions for each obesity category appear symmetrical. However, the distribution of Obesity Type III individuals is skewed right, meaning they tend to have higher weights. 
+
+
+Since the figure was generated with Altair, it includes an interactive tooltip feature. This allows users to hover over each box plot and view precise statistical values for each group, including the minimum, first quartile (Q1), median, third quartile (Q3), and maximum weights. As a result, the user can obtain exact data points rather than relying on visual estimates. 
+
+
+Figure 2:
+Figure 2 is a scatterplot displaying the relationship between weight, in kilograms, and height, in meters, of individuals across all obesity categories. In general, there seems to be a moderately strong, positive relationship between the two features. However, this trend is more evident within each category. For example, within the insufficient weight category, the relationship appears to be stronger. In contrast, within the general obesity category, this relationship appears to be weaker and more variant, most likely due to the combination of subcategories. 
+
+
+First off, the user can zoom in and out and drag the figure across the screen as needed. Similar to Figure 1, there is an interactive tooltip feature where the user can hover over points and view information, such as age and gender, in addition to weight and height. This allows the user to understand the data in greater depth by examining individual-level characteristics. Furthermore, the user has the option to highlight specific categories via a radio button, which allows them to focus on certain data. 
+
+
+Figure 3:
+Figure 3 is a treemap showing the gender-based breakdown of obesity levels. Most females tend to be Obesity Type III, while most males tend to be Obesity Type II. In contrast, it is uncommon for females to be Obesity Type II and males to be Obesity Type III. Nonetheless, there is a similar number of females and males being Normal Weight and Overweight Level I. Additionally, more females tend to have insufficient weight, and more males tend to be Overweight Level II.
+
+
+This figure has an interactive tooltip feature where the user can hover over a section and view the gender, obesity category, and number of records. When hovering, the user can see the gender, obesity category, and the number of records for that specific section. This hover feature makes it easier to compare across categories. Furthermore, upon clicking a box, the rest of the figure turns grey, improving the ability to focus on certain data. 
+
+
+Figure 4:
+Figure 4 consists of two panels: a scatterplot displaying weight (kg) versus age (years) and a bar plot displaying the number of meals individuals consume across various obesity categories. As a portion of the scatterplot is selected, the bar plot updates to reflect the selected data. There is no strong linear trend overall; however, the data appears visually “sectioned off” by the obesity category. For example, individuals with insufficient weight tend to have consistently lower weights across all ages. In contrast, the weights of individuals in the normal and overweight categories overlap significantly, showing variation across ages. Those categorized as obese consistently weigh more than individuals in the other categories. As for the bar plot, most people, regardless of their obesity category, tend to have three meals a day. 
+
+
+As mentioned previously, as the user selects a portion of the scatterplot, the bar plot updates to reflect the selected data. This allows the user to see the meal consumption distribution of certain data, which, in turn, allows them to understand how the number of meals eaten a day affects different individuals belonging to various obesity categories. 
+
+
+Figure 5:
+This figure has an interactive tooltip feature where the user can hover over the bar and view the gender, obesity category, and number of records. Furthermore, when the user hovers over a bar, the rest of the bars turn gray, highlighting the one bar the user is interested in. This allows the user to focus on certain data and makes it easier to compare across categories.
+
+
+The D3 visualization includes interactive hover tooltips that display the exact number of individuals for each obesity level within each meal-snacking frequency. This interactivity allows users to directly compare obesity distribution patterns across behavior groups without estimating from bar height alone. Users can engage with the chart by hovering over different sections to gain deeper insight into which eating habits are more common in specific obesity categories.
