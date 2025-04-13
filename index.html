@@ -29,19 +29,40 @@
     <section>
       <h2>Project Introduction</h2>
       <p>
-        Obesity is a growing global health concern, influenced by genetic, environmental,
-        and lifestyle factors. This project explores how everyday habits—such as diet, physical activity,
-        hydration, and transportation—impact obesity risk. Through data analysis and interactive visualizations,
-        we aim to uncover meaningful patterns that can guide healthier choices and public health strategies.
+        Obesity is a growing global health issue, associated with increased risks of chronic conditions such as heart disease, diabetes, and hypertension. 
+        It’s a complex condition influenced by a combination of genetic predispositions, demographic traits, and everyday lifestyle choices.
+        This project investigates how factors like eating habits, hydration, physical activity, screen time, and transportation methods contribute to obesity risk.
+        Our goal is to use interactive visualizations and data-driven analysis to uncover patterns that highlight the most influential behaviors. 
+        These insights can support better personal decisions and more effective public health strategies.
       </p>
     </section>
 
     <section>
       <h2>About the Dataset</h2>
       <p>
-        We use the Obesity Prediction dataset from Kaggle by Ruchika Kumbhar. It contains 2,111 rows and 17 columns,
-        including demographic and lifestyle variables like age, height, weight, food frequency, water intake,
-        and physical activity. The target variable classifies individuals by obesity level.
+        We use the 
+        <a href="https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition" target="_blank">
+          Obesity Prediction Dataset</a> from the UCI Machine Learning Repository.
+        The dataset contains 2,111 individuals and17 features, including one target variable 
+        (<code>Obesity_level</code>) that classifies individuals into categories from underweight to obesity type III.
+      </p>
+      <p>
+        The features are grouped into the following categories:
+      </p>
+      <ul>
+        <li><strong>Demographics:</strong> <code>Gender</code>, <code>Age</code>, <code>Height</code>, <code>Weight</code> – baseline characteristics crucial for BMI calculation.</li>
+        <li><strong>Genetic & Background Factors:</strong> <code>family_history</code> (overweight in family), <code>SCC</code> (monitors calorie intake).</li>
+        <li><strong>Lifestyle & Behavioral Habits:</strong>
+          <ul>
+            <li><strong>Eating habits:</strong> <code>FAVC</code> (high-calorie foods), <code>FCVC</code> (vegetable intake), <code>NCP</code> (meal frequency), <code>CAEC</code> (snacking).</li>
+            <li><strong>Hydration:</strong> <code>CH2O</code> (daily water intake).</li>
+            <li><strong>Activity:</strong> <code>FAF</code> (physical activity), <code>TUE</code> (screen time), <code>MTRANS</code> (transportation type).</li>
+            <li><strong>Other factors:</strong> <code>SMOKE</code> (smoking), <code>CALC</code> (alcohol consumption).</li>
+          </ul>
+        </li>
+      </ul>
+      <p>
+        By exploring how these features relate to obesity levels, we aim to identify actionable insights and build a deeper understanding of the behavioral factors behind weight gain.
       </p>
     </section>
 
