@@ -1,6 +1,6 @@
 const margin = { top: 70, right: 150, bottom: 60, left: 70 },
-      width = 900 - margin.left - margin.right,
-      height = 500 - margin.top - margin.bottom;
+      width = 700 - margin.left - margin.right,
+      height = 400 - margin.top - margin.bottom;
 
 const svg = d3.select("#chart")
   .append("svg")
